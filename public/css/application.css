@@ -1,0 +1,19 @@
+*{
+  font-size: 1.05em;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.headerbar {
+	font-family: Verdana;
+	font-style: italic;
+}
+
+body {
+    background-image:  url(http://upload.wikimedia.org/wikipedia/commons/e/e5/SpaceX_factory.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center-center;
+}

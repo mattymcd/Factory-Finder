@@ -1,0 +1,15 @@
+<div class="users">
+  <% all_users.each do |user| %>
+  <p>
+    <% unless user == current_user %>
+      <a href="/users/<%= user.id %>"><h4><%= user.name %></h4></a>
+      <% if current_user.idols.include?(user) %>
+        <%= erb :_unfollow, locals: { user: user } %>
+      <% else %>
+        <%= erb :_follow, locals: { user: user } %>
+      <% end %>
+    <% end %>
+  </p>
+  <br>
+<% end %>
+</div>

@@ -1,0 +1,9 @@
+<% sorted_tweets = tweets.sort_by { |tweet| tweet.created_at }.reverse %>
+<% sorted_tweets.each do |tweet| %>
+  <p>
+    <%= tweet.user.name %> <em><%= tweet.user.username %></em>
+    <br>
+    <%= tweet.content %>
+  </p>
+  <br>
+<% end %>
