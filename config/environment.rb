@@ -5,11 +5,17 @@ ENV['BUNDLE_GEMFILE'] ||= File.expand_path('../../Gemfile', __FILE__)
 
 require 'bundler/setup' if File.exists?(ENV['BUNDLE_GEMFILE'])
 
+require "dotenv"
+Dotenv.load
+
 # Require gems we care about
 require 'rubygems'
+require 'httparty'
 
 require 'uri'
 require 'pathname'
+
+require 'bcrypt'
 
 require 'pg'
 require 'active_record'
@@ -23,6 +29,8 @@ require 'erb'
 require 'awesome_print'
 
 require 'hirb'
+
+require 'byebug'
 
 Hirb.enable
 

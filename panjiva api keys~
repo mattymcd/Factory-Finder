@@ -1,0 +1,13 @@
+
+
+Client ID: wieTLy3ImvfCKLEIM3XW1dUgd1IVmHtJ1llCbwI9
+
+Client Secret: G25gVJ0Ik2GcNCVTRHWGV6W770X96EE5vd2wW3Jb
+
+{"access_token":"g8GCI6yCVhh6t6yYYrksJiv56c7QweLxdcipBo28","token_type":"bearer","expires_in":86400}
+
+
+Add Authorization: Bearer ACCESS_TOKEN to all requests requiring authorization.
+
+$ curl http://api.panjiva.com/api/v1/search/supplier?query=LED+Lighting -H "Authorization: Bearer FXd7f5bI7aYzK8j5jS5KnaH817KDYFTI0lUQxiWV"
+[...]

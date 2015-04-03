@@ -1,17 +1,17 @@
-<!-- This is the main page -->
-<div class="row" style="background-color: #4099FF">
-  <h1 style="color: white; text-align: center; font-size: 70px">'Lil Twitter</h1>
+<!-- This is the main page once you log in -->
+<div class="row" style="background-color: #00005C">
+  <h1 style="color: white; text-align: center; font-size: 70px">Factory Search</h1>
   <p><button type="button" class="btn btn-default pull-right"><a href="/logout">Logout</a></button></p>
 </div>
 
 <div class="row">
-  <div class="col-xs-3 col-md-3 col-lg-3">
-    <p><%= erb :_users, locals: { all_users: @users, current_user: @current_user } %></p>
-  </div>
-  <div class="col-xs-8 col-md-8 col-lg-8 col-md-offset-1">
-    <p><%= erb :new_tweet %></p>
-    <p><%= erb :tweets, locals: { tweets: @tweets_to_include, current_user: @current_user } %></p>
-  </div>
+
+<div><%= erb :_search_box %></div>
+
+<div class="results display">
+	<p><%= erb :_results, locals: { results: @results }%></p>
+</div>
+  
 </div>
 
 

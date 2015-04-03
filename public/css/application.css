@@ -17,3 +17,35 @@ body {
     background-repeat: no-repeat;
     background-position: center-center;
 }
+.box{
+  display: none;
+}
+
+td {
+  font-weight: bold;
+  padding: 15px;
+}
+
+tr {
+  margin: 20px;
+}
+
+.search-results {
+
+  vertical-align: middle;
+	background-color: white;
+	width: 100%;
+  border-collapse: collapse;
+  border: 1px solid black;
+  border-spacing: 0;
+
+}
+
+.search-box {
+  
+}
+
+.background-image {
+  background-image: url('http://upload.wikimedia.org/wikipedia/commons/e/e5/SpaceX_factory.jpg');
+
+}
