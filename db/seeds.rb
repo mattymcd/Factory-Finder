@@ -1,6 +1,7 @@
+require_relative "seed.csv"
 require 'csv'
 
-CSV.foreach("/home/mbm7a/Documents/DBC/Factory-Finder/db/seed.csv", :headers => true) do | row |
+CSV.foreach("seed.csv", :headers => true) do | row |
 	hash = row.to_h
 	Shipment.create(hash)
   
