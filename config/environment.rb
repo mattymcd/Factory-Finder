@@ -30,7 +30,7 @@ require 'awesome_print'
 
 require 'hirb'
 
-require 'byebug'
+require 'byebug' if development?
 
 Hirb.enable
 
